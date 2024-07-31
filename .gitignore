@@ -2,7 +2,26 @@
 .thumbs.db
 node_modules
 
+# Folders
 /dist
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Linux
+*~
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
 
 # Log files
 npm-debug.log*
@@ -24,3 +43,15 @@ yarn-error.log*
 .idea/
 .vscode/
 *.sublime-workspace
+
+#-------------------------
+# Temporary Files
+#-------------------------
+public/storage/*
+!public/storage/index.html
+
+storage/cache/*
+!storage/cache/index.html
+
+storage/logs/*
+!storage/logs/index.html
