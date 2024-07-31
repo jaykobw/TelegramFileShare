@@ -1,0 +1,29 @@
+.DS_Store
+.thumbs.db
+node_modules
+
+/dist
+/public/storage/*
+/storage/cache/*
+/storage/logs/*
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log*
+*.log
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.cache
+
+.env
+
+.idea/
+.vscode/
+*.sublime-workspace

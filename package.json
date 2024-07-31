@@ -1,0 +1,51 @@
+{
+  "name": "cdn-telegram-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "prod": "nodemon src/server.ts",
+    "lint": "eslint --ext .js,.ts ./",
+    "format": "prettier --write \"**/*.{js,ts,scss,html,md,json}\" --ignore-path .gitignore"
+  },
+  "keywords": [
+    "Telegram",
+    "Sequelize"
+  ],
+  "author": "Jaykobw <hello@jacobwatenga.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "hpp": "^0.2.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-telegram-bot-api": "^0.66.0",
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.37.3",
+    "sequelize-typescript": "^2.1.6",
+    "typescript": "^5.5.4",
+    "winston": "^3.13.1"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.17",
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^4.17.21",
+    "@types/hpp": "^0.2.6",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.0.0",
+    "@types/node-telegram-bot-api": "^0.64.7",
+    "eslint": "^9.8.0",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3",
+    "sequelize-cli": "^6.6.2",
+    "ts-node": "^10.9.2"
+  }
+}
