@@ -5,6 +5,7 @@ node_modules
 /dist
 /public/storage/*
 
+
 # Log files
 npm-debug.log*
 yarn-debug.log*
