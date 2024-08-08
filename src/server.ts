@@ -13,7 +13,7 @@ dotenv.config({
   path: './.env',
 });
 
-// initializeDBConnection();
+initializeDBConnection();
 
 const SERVER_PORT = process.env.APP_PORT || 3000;
 
