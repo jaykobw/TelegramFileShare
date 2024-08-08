@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
+import { FileModel } from '../models/FileModel';
 
 export default class FileController {
   constructor() {}
@@ -19,9 +20,27 @@ export default class FileController {
     res: Response,
     next: NextFunction,
   ): Promise<void> {
+    const fileId = req.params?.id;
+
+    if (!fileId) {
+      res.status(400).json({
+        status: 'error',
+        message: 'File ID is required',
+      });
+    }
+
+    const findFile = FileModel.findByPk(fileId);
+
+    if (!findFile) {
+      res.status(400).json({
+        status: 'error',
+        message: 'File ID is invalid',
+      });
+    }
+
     res.status(200).json({
       status: 'success',
-      message: 'App is running',
+      data: findFile,
     });
   }
 
